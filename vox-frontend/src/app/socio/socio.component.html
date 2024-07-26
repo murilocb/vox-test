@@ -1,0 +1,20 @@
+<h1>Sócios</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Nome</th>
+      <th>CPF</th>
+      <th>Percentual de Participação</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let socio of socios">
+      <td>{{ socio.id }}</td>
+      <td>{{ socio.nome }}</td>
+      <td>{{ socio.cpf }}</td>
+      <td>{{ socio.percentualParticipacao }}</td>
+    </tr>
+  </tbody>
+</table>
